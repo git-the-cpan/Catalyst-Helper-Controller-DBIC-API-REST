@@ -1,4 +1,5 @@
-package RestTest::Controller::API::REST::Artist;
+package #hide from Pause
+	RestTest::Controller::API::REST::Artist;
 
 use strict;
 use warnings;

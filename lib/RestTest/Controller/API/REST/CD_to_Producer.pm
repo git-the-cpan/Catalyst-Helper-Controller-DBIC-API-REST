@@ -1,4 +1,5 @@
-package RestTest::Controller::API::REST::CD_to_Producer;
+package #hide from Pause
+	RestTest::Controller::API::REST::CD_to_Producer;
 
 use strict;
 use warnings;
