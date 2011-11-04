@@ -1,9 +1,8 @@
-package #hide from Pause
-	RestTest::Controller::API::REST::Producer;
+package RestTest::Controller::API::REST::Producer;
 
 use strict;
 use warnings;
-use JSON::Syck;
+use JSON::XS;
 
 use parent qw/RestTest::ControllerBase::REST/;
 
@@ -19,21 +18,21 @@ __PACKAGE__->config(
 
     list_prefetch_allows    =>  [ # every possible prefetch param allowed
         [qw/cd_to_producer/], {  'cd_to_producer' => [qw//] },
-		[qw/tags/], {  'tags' => [qw//] },
-		[qw/tracks/], {  'tracks' => [qw//] },
-		
+        [qw/tags/], {  'tags' => [qw//] },
+        [qw/tracks/], {  'tracks' => [qw//] },
+
     ],
 
     list_ordered_by         => [qw/producerid/], # order of generated list
     list_search_exposes     => [
         qw/producerid name/,
-        
+
     ], # columns that can be searched on via list
 );
 
 =head1 NAME
 
- - REST Controller for RestTest
+ - REST Controller for
 
 =head1 DESCRIPTION
 

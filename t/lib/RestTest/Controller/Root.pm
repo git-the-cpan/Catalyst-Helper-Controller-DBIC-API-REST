@@ -1,4 +1,5 @@
-package RestTest::Controller::Root;
+package # Hide from PAUSE
+    RestTest::Controller::Root;
 
 use strict;
 use warnings;
@@ -37,7 +38,7 @@ sub default : Private {
 
 Attempt to render a view, if needed.
 
-=cut 
+=cut
 
 sub end : Private {}
 
